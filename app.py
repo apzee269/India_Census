@@ -18,7 +18,7 @@ plot = st.sidebar.button('Plot Graph')
 
 if plot:
     if selected_state == 'Overall India':
-        fig = px.scatter_mapbox(data, lat='Latitude', lon='Longitude', zoom=3, size = primary,color = secondary,mapbox_style="carto-positron")
+        fig = px.scatter_mapbox(data, lat='Latitude', lon='Longitude', zoom=3, size = primary,mapbox_style="carto-positron")
 
         st.plotly_chart(fig)
     else:
